@@ -1,7 +1,6 @@
 # anatomiaSitioWeb-QuinterosMarcos
 
-Nombre : Marcos
-Apellido: Quinteros
+Nombre y Apellido: Marcos Quinteros
 
 Contenido:
   - HTML
