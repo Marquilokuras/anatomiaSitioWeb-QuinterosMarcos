@@ -12,18 +12,6 @@ h2 {
   font-size: 24px;
 }
 
-#precio {
-  font-size: 18px;
-}
-
-#descuento {
-  font-size: 16px;
-}
-
-#descripcion {
-  font-size: 16px;
-}
-
 #compraCuotas {
   text-align: center;
 }
@@ -36,9 +24,6 @@ h2 {
   align-items: center;
   height: 20px;
   width: 20px;
-}
-
-#icon {
 }
 
 #search {
@@ -61,12 +46,38 @@ ul {
   color: #5a5a5a;
 }
 
-article {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+/*CUERPO*/
+
+.articulos {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+#precio {
+  font-size: 18px;
+}
+
+#descuento {
+  font-size: 16px;
+}
+
+#descripcion {
+  font-size: 16px;
+}
+
+.article img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#precio, #descuento, #descripcion {
+  text-align: center;
+}
+
+/*PIE DE PAGINA*/
 
 .iconFooter {
   font-size: 2em;
@@ -80,4 +91,13 @@ article {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: #757575;
+}
+
+.sectionFooterCopy {
+  color: #9a9a9a;
+}
+
+footer h2 {
+  color: #585858;
 }
