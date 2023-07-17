@@ -1,0 +1,83 @@
+header {
+  font-family: "Roboto", sans-serif;
+  background-color: #eac926;
+  color: #5a5a5a;
+}
+
+body {
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+#precio {
+  font-size: 18px;
+}
+
+#descuento {
+  font-size: 16px;
+}
+
+#descripcion {
+  font-size: 16px;
+}
+
+#compraCuotas {
+  text-align: center;
+}
+
+.menuOpcion {
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+}
+
+#icon {
+}
+
+#search {
+  background-color: white;
+  margin: 2px;
+}
+
+#buscar {
+  margin: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.2;
+  color: #5a5a5a;
+}
+
+article {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.iconFooter {
+  font-size: 2em;
+  margin-bottom: 10px;
+  fill: blue;
+  display: block;
+  margin: 0 auto;
+}
+
+.sectionFooter {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
