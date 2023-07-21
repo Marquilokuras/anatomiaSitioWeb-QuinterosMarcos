@@ -1,7 +1,22 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
 header {
   font-family: "Roboto", sans-serif;
   background-color: #eac926;
   color: #5a5a5a;
+}
+
+.header {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+#logo {
+  margin-top: 10px;
 }
 
 body {
@@ -24,6 +39,9 @@ h2 {
   align-items: center;
   height: 20px;
   width: 20px;
+  margin: auto;
+  border-radius: 20%;
+  margin-bottom: 10px;
 }
 
 #search {
@@ -48,22 +66,17 @@ ul {
 
 /*CUERPO*/
 
-.articulos {
-  display: flex;
-  flex-wrap: wrap;
+main {
+  width: 90%;
+  margin: 0 auto;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-#precio {
-  font-size: 18px;
-}
+.articulos {
 
-#descuento {
-  font-size: 16px;
-}
-
-#descripcion {
-  font-size: 16px;
+  margin-top: 10px;
 }
 
 .article img {
@@ -71,17 +84,63 @@ ul {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
+  margin-bottom: 10px;
 }
 
-#precio, #descuento, #descripcion {
-  text-align: center;
+.article {
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.articuloDescripcion svg {
+  border: 1px solid green;
+  border-radius: 50%;
+  align-items: left;
+  fill: green;
+  float: right;
+}
+
+.article #descuento {
+  color: green;
+}
+
+.articuloDescripcion {
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  margin-right: auto;
+  display: block;
+}
+
+#precio,
+#descuento,
+#descripcion {
+  text-align: left;
+  margin: 0;
+}
+
+.precioDescuento {
+  display: flex;
+}
+
+#precio {
+  width: 30%;
+}
+
+#descuento {
+  width: 70%;
+}
+
+#descripcion {
+  margin-top: 10px;
 }
 
 /*PIE DE PAGINA*/
 
 .iconFooter {
   font-size: 2em;
-  margin-bottom: 10px;
+  margin-top: 10px;
   fill: blue;
   display: block;
   margin: 0 auto;
@@ -100,4 +159,68 @@ ul {
 
 footer h2 {
   color: #585858;
+}
+
+/* Ocultar descripción en dispositivos móviles */
+@media screen and (max-width: 360px) {
+  #descripcion {
+    display: none;
+  }
+
+  .menuOpcion {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    display: none;
+  }
+
+}
+
+/* Estilos para tablets (ancho mínimo 361px) */
+@media screen and (min-width: 361px) {
+  .article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .menuOpcion {
+    display: none;
+  }
+
+  ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .articulos{
+    display: flex;
+    
+  }
+  
+  .article {
+    max-width: 50%;
+  }
+
+}
+
+/* Estilos para desktops (ancho mínimo 769px) */
+@media screen and (min-width: 769px) {
+  .article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .menuOpcion {
+    display: none;
+  }
+
+  ul {
+
+    margin-bottom: 10px;
+  }
+
+  .article {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
 }
