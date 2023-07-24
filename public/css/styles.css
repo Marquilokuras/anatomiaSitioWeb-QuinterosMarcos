@@ -8,16 +8,56 @@ header {
   font-family: "Roboto", sans-serif;
   background-color: #eac926;
   color: #5a5a5a;
+  
 }
 
 .header {
   margin-left: 5px;
   margin-bottom: 5px;
+  display:flex;
+  
 }
 
-#logo {
-  margin-top: 10px;
+/* Buscador */
+
+/* .logo{
+  width: 100%;
+  max-width: 100%;
 }
+
+.buscador{
+  width: 100%;
+  max-width: 100%;
+}
+ */
+ .logoBuscador{
+    display: inline-flex;
+    width: 100%;
+}
+
+ #logo {
+  margin-top: 10px;
+  width: 50%;
+  max-width: 100%;
+}
+
+.buscador-form {
+  display: inline-flex;
+  align-items: center; 
+
+}
+
+.buscador-form input{
+  margin-right: 10px; 
+} 
+
+/* .buscador-button {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+} */
+
+/* ---------------------- */
 
 body {
   font-size: 12px;
@@ -62,6 +102,10 @@ ul {
   padding: 0;
   margin: 0.2;
   color: #5a5a5a;
+}
+
+#banner{
+  width: 100vw;
 }
 
 /*CUERPO*/
@@ -216,12 +260,12 @@ footer h2 {
   }
 
   ul {
-
     margin-bottom: 10px;
   }
 
   .article {
     flex-basis: 25%;
     max-width: 25%;
+    justify-content: space-around;
   }
 }
