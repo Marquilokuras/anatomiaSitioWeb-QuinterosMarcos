@@ -194,10 +194,12 @@ footer h2 {
 
   .articulos{
     display: flex;
+    flex-wrap: wrap;
     
   }
   
   .article {
+    /* display: flex; */
     max-width: 50%;
   }
 
