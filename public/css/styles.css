@@ -30,6 +30,9 @@ header {
 
 #buscadorIcon {
   text-align: auto;
+  margin: 5px;
+  display: flex;
+  background-color: #ffffff;
 }
 
 /* .menuOpcion{
@@ -124,11 +127,16 @@ h2 {
 #search {
   background-color: white;
   padding: 2px;
-  border: #585858 solid 1px;
+}
+
+#buscadorIcon button{
+  border: transparent solid 1px;
+  outline: none;
 }
 
 #buscar {
-  margin: 2px;
+  border: 1px solid transparent;
+  max-width: 130px;
 }
 
 a {
@@ -147,7 +155,7 @@ ul {
 }
 
 #banner {
-  width: 100%;
+  width: 100vw;
 }
 
 /*CUERPO*/
@@ -232,21 +240,40 @@ main {
 }
 
 .sectionFooter {
-  justify-content: center;
-  align-items: center;
   text-align: center;
   color: #757575;
+  margin-bottom: 10px;
 }
 
 .sectionFooterCopy {
   color: #9a9a9a;
+  margin-top: 10px;
 }
 
 footer h2 {
   color: #585858;
 }
 
-/* Ocultar descripción en dispositivos móviles */
+#descripcion {
+  display: none;
+}
+
+.menuOpcion {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul {
+  display: none;
+}
+
+.main-header-top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/*  Ocultar descripción en dispositivos móviles 
 @media screen and (max-width: 360px) {
   #descripcion {
     display: none;
@@ -261,10 +288,23 @@ footer h2 {
     display: none;
   }
 
+} */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+
+.section-footer{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 /* Estilos para tablets (ancho mínimo 361px) */
-@media screen and (min-width: 361px) {
+@media screen and (min-width: 768px) {
 
   .main-header-top-bar {
     display: flex;
@@ -273,7 +313,7 @@ footer h2 {
 
   #compraCuotas {
     max-width: 350px;
-    
+
     /* text-align: right; */
   }
 
@@ -355,10 +395,14 @@ footer h2 {
     max-width: 50%;
   }
 
+  .sectionFooter {
+    width: 30%;
+  }
+
 }
 
 /* Estilos para desktops (ancho mínimo 769px) */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
 
   .main-header-top-bar {
     display: flex;
@@ -439,4 +483,5 @@ footer h2 {
     max-width: none;
     font-weight: 400;
   }
+
 }
