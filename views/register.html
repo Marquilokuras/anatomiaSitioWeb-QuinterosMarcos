@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Cuenta</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/stylesFormularios.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 </head>
@@ -22,7 +23,7 @@
             <form id="buscadorIcon" class="buscador-form">
                 <input type="text" id="buscar" placeholder="Buscar productos, marcas">
 
-                <i class="fas fa-search" id="search"></i>
+                <button type="submit"><i class="fas fa-search" id="search"></i></button>
             </form>
             <p id="compraCuotas"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
                     <path
@@ -43,12 +44,12 @@
             </ul>
 
             <ul class="right-navbar">
-                <li><a href="">Creá tu cuenta <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                            viewBox="0 0 576 512">
+                <li><a href="/register" target="_blank">Creá tu cuenta <svg xmlns="http://www.w3.org/2000/svg"
+                            height="1em" viewBox="0 0 576 512">
                             <path
                                 d="M512 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H512zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM208 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128zm-32 32c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H304c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H176zM376 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376z" />
                         </svg></a></li>
-                <li><a href="">Ingresá <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                <li><a href="/login">Ingresá <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                             <path
                                 d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
                         </svg></a></li>
@@ -59,52 +60,70 @@
             </ul>
 
         </nav>
-        <img id="banner" src="/img/img-home-banner.jpg" alt="Logo de Mercado Liebre" width="200">
     </header>
+    <img id="banner" src="/img/img-home-banner.jpg" alt="Logo de Mercado Liebre">
 
     <main>
-        <form action="/register" method="post" >
-            <label for="nombre_apellido">Nombre y Apellido:</label>
-            <input type="text" id="nombre_apellido" name="nombre_apellido" required><br>
-    
-            <label for="nombre_usuario">Nombre de usuario:</label>
-            <input type="text" id="nombre_usuario" name="nombre_usuario" required><br>
-    
-            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
-    
-            <label for="domicilio">Domicilio:</label>
-            <input type="text" id="domicilio" name="domicilio" required><br>
-    
-            <label for="perfil_usuario">Perfil del usuario:</label>
-            <input type="radio" id="comprar" name="perfil_usuario" value="comprar" required>
-            <label for="comprar">Comprar</label>
-            <input type="radio" id="vender" name="perfil_usuario" value="vender" required>
-            <label for="vender">Vender</label><br>
-    
-            <label for="categorias_interes">Categorías de interés:</label><br>
-            <input type="checkbox" id="electro" name="categorias_interes" value="Electro">
-            <label for="electro">Electro</label><br>
-            <input type="checkbox" id="moda" name="categorias_interes" value="Moda">
-            <label for="moda">Moda</label><br>
-            <input type="checkbox" id="hogar" name="categorias_interes" value="Hogar">
-            <label for="hogar">Hogar</label><br>
-            <input type="checkbox" id="jugueteria" name="categorias_interes" value="Juguetería">
-            <label for="jugueteria">Juguetería</label><br>
-            <input type="checkbox" id="vida_sana" name="categorias_interes" value="Vida sana">
-            <label for="vida_sana">Vida sana</label><br>
-    
-            <label for="foto_usuario">Foto de usuario:</label>
-            <input type="file" id="foto_usuario" name="foto_usuario" accept="image/*" required><br>
-    
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" required><br>
-    
-            <label for="confirmar_contrasena">Confirmar contraseña:</label>
-            <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required><br>
-    
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
+        <form action="/register" method="post">
+            <!--             <label for="nombre_apellido">Nombre y Apellido:</label> -->
+            <input type="text" id="nombre_apellido" name="nombre_apellido" placeholder="Nombre y Apellido"
+                pattern=".{2,}" title="El nombre y apellido debe contener al menos dos caracteres.">
+
+            <!-- <label for="nombre_usuario">Nombre de usuario:</label> -->
+            <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Nombre de usuario" required
+                pattern=".{3,}" title="El nombre de usuario debe contener al menos tres caracteres.">
+
+            <input type="email" id="email" name="email" placeholder="E-mail" required pattern=".{3,}"
+                title="El email debe contener al menos tres caracteres.">
+
+            <div>
+                <p><strong>Fecha de Nacimiento</strong></p>
+                <!-- <label for="fecha_nacimiento">Fecha de nacimiento:</label>-->
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+
+            <!--             <label for="domicilio">Domicilio:</label> -->
+            <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio" required>
+
+            <div>
+                <p><strong>Perfil de Usuario</strong></p>
+                <!-- <label for="perfil_usuario">Perfil del usuario:</label>-->
+                <input type="radio" id="comprar" name="perfil_usuario" value="comprar" required>
+                <label for="comprar">Comprar</label>
+                <input type="radio" id="vender" name="perfil_usuario" value="vender" required>
+                <label for="vender">Vender</label>
+            </div>
+
+            <div>
+                <p><strong>Intereses</strong></p>
+                <!-- } <label for="categorias_interes">Categorías de interés:</label> -->
+                <input type="checkbox" id="electro" name="categorias_interes" value="Electro">
+                <label for="electro">Electro</label>
+                <input type="checkbox" id="moda" name="categorias_interes" value="Moda">
+                <label for="moda">Moda</label>
+                <input type="checkbox" id="hogar" name="categorias_interes" value="Hogar">
+                <label for="hogar">Hogar</label>
+                <input type="checkbox" id="jugueteria" name="categorias_interes" value="Juguetería">
+                <label for="jugueteria">Juguetería</label>
+                <input type="checkbox" id="vida_sana" name="categorias_interes" value="Vida sana">
+                <label for="vida_sana">Vida sana</label>
+            </div>
+
+            <div class="foto">
+                <p><strong>Foto de Usuario</strong></p>
+                <!-- <label for="foto_usuario">Foto de usuario:</label> -->
+                <input type="file" id="foto_usuario" name="foto_usuario" accept="image/*" required>
+            </div>
+
+            <!--<label for="contrasena">Contraseña:</label> -->
+            <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+
+            <!-- <label for="confirmar_contrasena">Confirmar contraseña:</label> -->
+            <input type="password" id="confirmar_contrasena" name="confirmar_contrasena"
+                placeholder="Confirmar contraseña" required>
+
+            <input type="submit" value="Enviar" class="btnEnvio">
+            <input type="reset" value="Borrar" class="btnBorro">
         </form>
     </main>
 
@@ -118,7 +137,7 @@
             <article>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
                 puntos de pago. ¡Y siempre es seguro!</article>
         </section>
-        <br>
+
         <section class="sectionFooter">
             <svg class="iconFooter" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                 <path
@@ -128,7 +147,7 @@
             <article>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                 productos. Es un beneficio de Mercado Puntos.</article>
         </section>
-        <br>
+
         <section class="sectionFooter">
             <svg class="iconFooter" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
                 <path
@@ -138,7 +157,7 @@
             <article>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                 porque estás siempre protegid@.</article>
         </section>
-        <br>
+
         <section class="sectionFooterCopy">
             <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
         </section>

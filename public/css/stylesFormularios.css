@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    background-color: rgb(223, 212, 212);
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+form *{
+    margin: 5px;
+}
+
+form input{
+    border: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    width: 1000px;
+}
+
+#fecha_nacimiento{
+    width: 200px;
+}
+
+/* Formulario de Login */
+.btnEnvio {
+    margin-top: 5px;
+    background-color: blue;
+    color: white;
+    border: transparent;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btnBorro {
+    margin-top: 5px;
+    background-color: red;
+    color: white;
+    border: transparent;
+    padding: 5px;
+    border-radius: 5px;
+}

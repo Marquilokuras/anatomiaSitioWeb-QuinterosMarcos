@@ -35,66 +35,6 @@ header {
   background-color: #ffffff;
 }
 
-/* .menuOpcion{
-  background-color: #03264c;
-  color: #ffffff;
-  display: block;
-  max-width: 50px;
-  padding: 15px 0;
-  border-radius: 8px;
-  text-align: center;
-  font-size: 18px;
-  margin: auto;
-} */
-
-/* 
-.header {
-  margin-left: 5px;
-  margin-bottom: 5px;
-  display: flex;
-
-}
-
-/* Buscador */
-
-/* .logo{
-  width: 100%;
-  max-width: 100%;
-}
-
-.buscador{
-  width: 100%;
-  max-width: 100%;
-}
- 
-
-.logoBuscador {
-  display: inline-flex;
-  width: 100%;
-}
-
-#logo {
-  margin-top: 10px;
-  width: 50%;
-  max-width: 100%;
-}
-
-.buscador-form {
-  display: inline-flex;
-  align-items: center;
-
-}
-
-.buscador-form input {
-  margin-right: 10px;
-}
-
-/* .buscador-button {
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-} */
-
 /* ---------------------- */
 
 body {
@@ -273,23 +213,6 @@ ul {
   justify-content: space-evenly;
 }
 
-/*  Ocultar descripción en dispositivos móviles 
-@media screen and (max-width: 360px) {
-  #descripcion {
-    display: none;
-  }
-
-  .menuOpcion {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  ul {
-    display: none;
-  }
-
-} */
-
 footer{
   display: flex;
   flex-direction: column;
@@ -303,6 +226,7 @@ footer{
   flex-wrap: wrap;
 }
 
+
 /* Estilos para tablets (ancho mínimo 361px) */
 @media screen and (min-width: 768px) {
 
@@ -313,8 +237,6 @@ footer{
 
   #compraCuotas {
     max-width: 350px;
-
-    /* text-align: right; */
   }
 
   #buscadorIcon {
@@ -367,6 +289,10 @@ footer{
     font-size: 8px;
     max-width: none;
     font-weight: 400;
+  }
+
+  #descripcion {
+    display: block;
   }
 
   /* Cuerpo */
