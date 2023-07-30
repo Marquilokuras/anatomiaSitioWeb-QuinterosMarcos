@@ -6,15 +6,16 @@
 
 main{
     background-color: rgb(223, 212, 212);
+    width: 100%;
 }
 
-form{
+ form{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-
+/*
 form *{
     margin: 5px;
 }
@@ -24,10 +25,83 @@ form input{
     padding: 5px;
     border-radius: 5px;
     width: 1000px;
+} */
+
+/* #fecha_nacimiento{
+    width: 400px;
 }
 
-#fecha_nacimiento{
-    width: 200px;
+.perfil, .intereses{
+    width: 400px;
+} */
+
+
+form {
+     max-width: 2000px; 
+   /*  margin: 0 auto; */
+    padding: 20px;
+/*     background-color: #fff; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+    margin-bottom: 5px;
+}
+
+#nombre_apellido,
+#nombre_usuario,
+#domicilio,
+input[type="email"],
+input[type="date"],
+input[type="password"],
+input[type="file"],
+.btnEnvio,
+input[type="reset"],
+input[type="radio"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* .btnEnvio {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+}
+
+.btnEnvio:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+} */
+
+/* Estilos para las etiquetas de los checkboxes y radio buttons */
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Estilo para el contenedor de Fecha de Nacimiento y Perfil de Usuario */
+.fechaNacimiento,
+.perfil,
+.intereses,
+.foto {
+    margin-bottom: 15px;
+}
+
+.fechaNacimiento p,
+.perfil p,
+.intereses p,
+.foto p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /* Formulario de Login */
