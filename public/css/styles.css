@@ -69,7 +69,7 @@ h2 {
   padding: 2px;
 }
 
-#buscadorIcon button{
+#buscadorIcon button {
   border: transparent solid 1px;
   outline: none;
 }
@@ -110,6 +110,19 @@ main {
 
 .articulos {
   margin-top: 10px;
+  margin: 2px;
+}
+
+.article {
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  padding: 15px;
+  margin-bottom: 10px;
+  transition: box-shadow 0.2s;
+}
+
+.article:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .article img {
@@ -120,19 +133,16 @@ main {
   margin-bottom: 10px;
 }
 
-.article {
-  background-color: #ffffff;
-  border: 1px solid #ebebeb;
-  padding: 15px;
-  margin-bottom: 10px;
-}
-
 .articuloDescripcion svg {
   border: 1px solid green;
   border-radius: 50%;
   align-items: left;
   fill: green;
   float: right;
+}
+
+.articuloDescripcion svg:hover {
+  transform: rotate(-90deg);
 }
 
 .article #descuento {
@@ -167,6 +177,15 @@ main {
 
 #descripcion {
   margin-top: 10px;
+  display: none;
+}
+
+.articuloDescripcion:hover #descripcion {
+  display: block;
+}
+
+h2 {
+  margin-bottom: 15px;
 }
 
 /*PIE DE PAGINA*/
@@ -177,6 +196,11 @@ main {
   fill: blue;
   display: block;
   margin: 0 auto;
+  transition: fill 0.3s;
+}
+
+.iconFooter:hover {
+  fill: #d0ff00;
 }
 
 .sectionFooter {
@@ -194,10 +218,6 @@ footer h2 {
   color: #585858;
 }
 
-#descripcion {
-  display: none;
-}
-
 .menuOpcion {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -213,14 +233,14 @@ ul {
   justify-content: space-evenly;
 }
 
-footer{
+footer {
   display: flex;
   flex-direction: column;
   padding: 10px;
   align-items: center;
 }
 
-.section-footer{
+.section-footer {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -310,15 +330,32 @@ footer{
     margin-bottom: 10px;
   }
 
-  .articulos {
+  /* .articulos {
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: space-around;
   }
 
   .article {
-    /* display: flex;  */
+    // display: flex;  
     max-width: 50%;
+  } */
+
+  .articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin: 2px;
+  }
+
+  .article {
+    flex-basis: 50%; /* Mostrar solo 2 elementos por fila en tablets */
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.2s;
   }
 
   .sectionFooter {
@@ -345,6 +382,7 @@ footer{
   }
 
   .main-navbar {
+    margin-top: 2px;
     display: flex;
     justify-content: space-between;
   }
@@ -354,11 +392,11 @@ footer{
   }
 
   .main-navbar li {
-    margin: 0 5px;
+    margin: 0 10px;
   }
 
-  .article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  .main-navbar a {
+    font-size: 15px;
   }
 
   .menuOpcion {
@@ -369,10 +407,34 @@ footer{
     margin-bottom: 10px;
   }
 
+  /* .articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   .article {
     flex-basis: 25%;
     max-width: 25%;
     justify-content: space-around;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  } */
+
+  .articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Agrega espacios entre los artículos en versión de escritorio */
+    margin-top: 10px;
+    margin: 2px;
+  }
+
+  .article {
+    flex-basis: 24%; /* Para que cada artículo ocupe un 24% del ancho del contenedor y haya espacio entre ellos */
+    max-width: 24%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.2s;
   }
 
   #logo {
@@ -390,18 +452,6 @@ footer{
     margin: auto;
     align-items: center;
     margin: 0;
-  }
-
-  .main-navbar {
-    margin-top: 2px;
-  }
-
-  .main-navbar li {
-    margin: 0 10px;
-  }
-
-  .main-navbar a {
-    font-size: 15px;
   }
 
   #compraCuotas {

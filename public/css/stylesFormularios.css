@@ -68,11 +68,17 @@ input[type="radio"] + label {
 /* Formulario de Login  */
 .btnEnvio {
     margin-top: 5px;
-    background-color: blue;
-    color: white;
+    background-color: grey;
+    color: black;
     border: transparent;
     padding: 5px;
     border-radius: 5px;
+}
+
+/* Estilo cuando el mouse esté encima */
+.btnEnvio:hover {
+    background-color: #0022AA; /* Nuevo color de fondo */
+    color: #ffffff; /* Nuevo color del texto */
 }
 
 .btnBorro {
