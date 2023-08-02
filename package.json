@@ -4,8 +4,8 @@
   "description": "Nombre y Apellido: Marcos Quinteros",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon src/home.js",
-    "start": "nodemon src/home.html",
+    "test": "nodemon app.js",
+    "start": "node app.js",
     "dev": "nodemon app.js"
   },
   "author": "",
